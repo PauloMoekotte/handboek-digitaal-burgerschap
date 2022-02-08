@@ -23,7 +23,7 @@
         return html`
           <div className="header">
             <h1 className="title">
-              <a href="index.html"><strong>issuance</strong></a>
+              <a href="index.html"><strong>Digitaal burgerschap</strong></a>
             </h1>
             <p className="description">
               Open, free blogging on <strong>Github pages</strong> with <strong>Github issues</strong>.
@@ -58,7 +58,7 @@
         return html`
           <div className="posts">
             ${(issues || [])
-              .filter(({ user }) => user.login === 'mateogianolio')
+              .filter(({ user }) => user.login === 'PauloMoekotte')
               .filter(({ number }) => !search || Number(search.slice(1)) === number)
               .map(({
                 number,
